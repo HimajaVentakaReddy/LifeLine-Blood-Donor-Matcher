@@ -134,4 +134,5 @@ This project is created for educational purposes. Blood transfusion compatibilit
 ## 👩‍💻 Author
 
 **Himaja Venkata Reddy**
+
 Computer Science & Engineering student focused on Java development, object-oriented programming, problem-solving, and building practical software projects.
