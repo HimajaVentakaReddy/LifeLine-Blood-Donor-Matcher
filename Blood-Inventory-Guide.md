@@ -1,4 +1,3 @@
-@'
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,12 +31,16 @@ public class BloodInventory {
     public static void main(String[] args) {
         BloodInventory stock = new BloodInventory();
 
-        stock.addUnits("O+", 10);
-        stock.addUnits("A+", 5);
+       Scanner sc = new Scanner(System.in);
 
-        stock.checkUnits("O+");
-        stock.checkUnits("A+");
-        stock.checkUnits("AB+");
+    System.out.print("Enter blood group: ");
+    String group = sc.nextLine();
+
+    System.out.print("Enter units to add: ");
+    int units = sc.nextInt();
+
+    stock.addUnits(group, units);
+    stock.checkUnits(group);
     }
 }
-'@ | Set-Content -Path "src/BloodInventory.java" -Encoding utf8
+
