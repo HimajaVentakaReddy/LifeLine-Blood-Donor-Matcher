@@ -1,25 +1,43 @@
-﻿# Blood Inventory Guide
+@'
+import java.util.HashMap;
+import java.util.Map;
 
-## Overview
-Tracks available units of different blood groups.
+public class BloodInventory {
 
-## Features
-- Add blood units for a blood group.
-- Check available units.
-- Display zero for unregistered blood groups.
-- Reject zero or negative unit additions.
+    private final Map<String, Integer> inventory = new HashMap<>();
 
-## Supported Blood Groups
-A+, A-, B+, B-, AB+, AB-, O+, O-.
+    public void addUnits(String bloodGroup, int units) {
+        if (units <= 0) {
+            System.out.println("Units must be greater than zero.");
+            return;
+        }
 
-## How to Run
-Compile: `javac src/BloodInventory.java`
-Run: `java -cp src BloodInventory`
+        String group = bloodGroup.toUpperCase();
 
-## Limitations
-- Stock is stored temporarily in memory.
-- Data is lost when the program exits.
-- This is a demonstration, not a live blood bank system.
+        inventory.put(
+            group,
+            inventory.getOrDefault(group, 0) + units
+        );
 
-## Purpose
-Demonstrates Java collections, validation, and blood-stock management.
+        System.out.println("Blood units added successfully.");
+    }
+
+    public void checkUnits(String bloodGroup) {
+        String group = bloodGroup.toUpperCase();
+        int units = inventory.getOrDefault(group, 0);
+
+        System.out.println(group + " available units: " + units);
+    }
+
+    public static void main(String[] args) {
+        BloodInventory stock = new BloodInventory();
+
+        stock.addUnits("O+", 10);
+        stock.addUnits("A+", 5);
+
+        stock.checkUnits("O+");
+        stock.checkUnits("A+");
+        stock.checkUnits("AB+");
+    }
+}
+'@ | Set-Content -Path "src/BloodInventory.java" -Encoding utf8
