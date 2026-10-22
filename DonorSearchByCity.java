@@ -19,19 +19,7 @@ public class DonorSearchByCity {
             "O+", "A+", "B+", "O-", "AB+"
         };
 
-        System.out.println("=== Donor Search By City ===");
-        System.out.print("Enter city: ");
-        String city = sc.nextLine().trim();
-
-        boolean found = false;
-
-        for (int i = 0; i < names.length; i++) {
-            if (cities[i].equalsIgnoreCase(city)) {
-                System.out.println("Name: " + names[i]);
-                System.out.println("Blood Group: " + groups[i]);
-                System.out.println("City: " + cities[i]);
-                System.out.println("-------------------");
-                found = true;
+       
             }
         }
 
