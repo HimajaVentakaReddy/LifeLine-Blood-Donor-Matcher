@@ -1,6 +1,8 @@
 public class EmergencyRequest {
 
-   
+    private String patientName;
+    private String requiredBloodGroup;
+    private String location;
 
     public EmergencyRequest(String patientName,
                             String requiredBloodGroup,
