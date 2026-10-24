@@ -127,7 +127,9 @@ java -cp src Main
 - Improved input validation
 - GUI or web-based interface
 
+## ⚠️ Disclaimer
 
+This project is created for educational purposes. Blood transfusion compatibility and donor eligibility in real-world medical situations must always be verified by qualified healthcare professionals and authorized blood banks.
 
 ## 👩‍💻 Author
 
