@@ -1,6 +1,16 @@
 import java.util.Scanner;
 
+public class BloodDonationAppointment {
+    private String donorName;
+    private String bloodGroup;
+    private String appointmentDay;
 
+    public BloodDonationAppointment(String donorName, String bloodGroup,
+                                    String appointmentDay) {
+        this.donorName = donorName;
+        this.bloodGroup = bloodGroup;
+        this.appointmentDay = appointmentDay;
+    }
 
     public void displayAppointment() {
         System.out.println("\n--- Blood Donation Appointment ---");
