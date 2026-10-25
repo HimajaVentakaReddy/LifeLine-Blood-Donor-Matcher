@@ -1,5 +1,16 @@
 import java.util.Scanner;
 
+public class BloodDonationPreparation {
+    private boolean hydrated;
+    private boolean ateMeal;
+    private boolean carryingIdentification;
+
+    public BloodDonationPreparation(boolean hydrated, boolean ateMeal,
+                                    boolean carryingIdentification) {
+        this.hydrated = hydrated;
+        this.ateMeal = ateMeal;
+        this.carryingIdentification = carryingIdentification;
+    }
 
     public void displayReport() {
         System.out.println("\n--- Donation Preparation Report ---");
