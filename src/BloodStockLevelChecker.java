@@ -1,16 +1,6 @@
 import java.util.Scanner;
 
-public class BloodStockLevelChecker {
-    private String bloodGroup;
-    private int unitsAvailable;
-    private int minimumRequired;
 
-    public BloodStockLevelChecker(String bloodGroup, int unitsAvailable,
-                                  int minimumRequired) {
-        this.bloodGroup = bloodGroup;
-        this.unitsAvailable = unitsAvailable;
-        this.minimumRequired = minimumRequired;
-    }
 
     public void displayStatus() {
         System.out.println("\n--- Blood Stock Level Report ---");
