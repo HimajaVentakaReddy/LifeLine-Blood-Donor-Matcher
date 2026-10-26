@@ -1,6 +1,15 @@
 import java.util.Scanner;
 
+public class DonorContactCard {
+    private String name;
+    private String phone;
+    private String bloodGroup;
 
+    public DonorContactCard(String name, String phone, String bloodGroup) {
+        this.name = name;
+        this.phone = phone;
+        this.bloodGroup = bloodGroup;
+    }
 
     public void displayCard() {
         System.out.println("\n--- Donor Contact Card ---");
