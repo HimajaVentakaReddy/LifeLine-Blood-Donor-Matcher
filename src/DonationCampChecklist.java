@@ -1,5 +1,16 @@
 import java.util.Scanner;
 
+public class DonationCampChecklist {
+    private String venue;
+    private int expectedDonors;
+    private int registrationDesks;
+
+    public DonationCampChecklist(String venue, int expectedDonors,
+                                 int registrationDesks) {
+        this.venue = venue;
+        this.expectedDonors = expectedDonors;
+        this.registrationDesks = registrationDesks;
+    }
 
     public void displayPlan() {
         System.out.println("\n--- Donation Camp Planning Checklist ---");
