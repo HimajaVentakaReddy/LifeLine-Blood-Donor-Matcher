@@ -1,5 +1,13 @@
 import java.util.Scanner;
 
+public class DonationDriveGoalTracker {
+    private int target;
+    private int collected;
+
+    public DonationDriveGoalTracker(int target, int collected) {
+        this.target = target;
+        this.collected = collected;
+    }
 
     public double calculateProgress() {
         return Math.min(100.0, collected * 100.0 / target);
