@@ -1,13 +1,6 @@
 import java.util.Scanner;
 
-public class BloodCampResourcePlanner {
-    private int expectedDonors;
-    private int registrationDesks;
 
-    public BloodCampResourcePlanner(int expectedDonors, int registrationDesks) {
-        this.expectedDonors = expectedDonors;
-        this.registrationDesks = registrationDesks;
-    }
 
     public int calculateDonorsPerDesk() {
         return (expectedDonors + registrationDesks - 1) / registrationDesks;
