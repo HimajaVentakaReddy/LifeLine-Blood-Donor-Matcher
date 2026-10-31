@@ -3,18 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class BloodDonorSearch {
 
-    static class Donor {
-        String name;
-        String bloodGroup;
-        String city;
-
-        Donor(String name, String bloodGroup, String city) {
-            this.name = name;
-            this.bloodGroup = bloodGroup.toUpperCase();
-            this.city = city;
-        }
 
         void display() {
             System.out.println("Name: " + name);
